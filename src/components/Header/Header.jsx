@@ -3,19 +3,9 @@ import "./header.scss";
 import { Link } from 'react-scroll';
 
 const Header = () => {
-    const [changeColor, setChangeColor] = useState("");
-    window.addEventListener('scroll', () => {
-        let currentScrollPos = window.pageYOffset;
-
-        if (currentScrollPos > 0) {
-            setChangeColor("scroll-color");
-        } else {
-            setChangeColor("");
-        }
-    });
 
     return (
-        <header className={`header ${changeColor}`}>
+        <header className="header">
             <div className="shell">
                 <div className="header__inner">
                     <nav className="header__nav">
