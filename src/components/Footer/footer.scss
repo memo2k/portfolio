@@ -1,0 +1,102 @@
+/**
+* * Footer
+*/
+.footer {
+    padding-top: 10rem;
+    background-color: #363c48;
+
+    .footer__form {
+        margin-bottom: 80px;
+        padding-bottom: 10rem;
+    }
+
+    .footer__nav {
+        border-top: 1px solid #fff;
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .footer__copyright {
+            color: #fff;
+        }
+
+        .footer__socials {
+            a {
+                color: #fff;
+                transition: .2s;
+            }
+
+            a + a {
+                margin-left: 10px;
+            }
+
+            a:hover {
+                color: #CE1B5F;
+            }
+        }
+    }
+}
+
+/**
+* * Form
+*/
+.form {
+    text-align: center;
+
+    .form__subheading h2 {
+        color: #f3f3f3;
+    }
+
+    .form__heading {
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
+    .form__body {
+        margin-bottom: 20px;
+    }
+
+    .form__row {
+        display: flex;
+    }
+
+    .form__field {
+        width: 100%;
+    }
+
+    .form__field + .form__field {
+        margin-left: 20px;
+    }
+
+    .form__row + .form__row {
+        margin-top: 20px;
+    }
+
+    .form__actions {
+        margin-top: 50px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        font-size: 20px;
+        border: 1px solid #586275;
+        background-color: #586275;
+        color: #fff;
+        transition: .2s;
+        letter-spacing: 1px;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: #fff;
+    }
+
+    input:focus, textarea:focus {
+        border: 1px solid #CE1B5F;
+    }
+
+    textarea {
+        resize: none;
+    }
+}

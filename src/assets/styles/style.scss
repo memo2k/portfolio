@@ -14,7 +14,7 @@
 body {
     font-family: 'Exo 2', sans-serif;
     font-weight: 400;
-    color: #fff;
+    color: #000;
     font-size: 1.125rem;
     min-height: 100vh;
 
@@ -23,6 +23,13 @@ body {
         color: #000;
         transition: .2s;
         letter-spacing: 2px;
+        cursor: pointer;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 36px;
+        letter-spacing: 1px;
     }
 
     li {
@@ -31,8 +38,15 @@ body {
 
     h1 {
         font-size: 3rem;
-        color: #000;
         letter-spacing: 3px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #5a5a5a;
+        font-weight: 100;
     }
 }
 
@@ -49,7 +63,7 @@ body {
 /**
 * * Buttons
 */
-.btn--red {
+.btn--transparent {
     padding: 15px 25px;
     border-radius: 30px;
     background-color: transparent;
@@ -57,8 +71,80 @@ body {
     font-weight: bold;
 }
 
-.btn--red:hover {
+.btn--transparent:hover {
     background-color: #CE1B5F;
     border-color: #CE1B5F;
     color: #fff;
+}
+
+.btn--red {
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: #CE1B5F;
+    border: 2px solid #CE1B5F;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn--red:hover {
+    background-color: #f23c82;
+    border: 2px solid #f23c82;
+}
+
+/**
+* * Grid
+*/
+.grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0 -20px;
+}
+
+.grid .grid__col {
+    max-width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0 20px;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.grid .grid__col--1of2 {
+    max-width: 50%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.grid .grid__col--1of3 {
+    max-width: calc(100% / 3);
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% / 3);
+    flex: 0 0 calc(100% / 3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.grid .grid__col--1of4 {
+    max-width: 25%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.grid-no-gutter {
+    margin: 0;
 }

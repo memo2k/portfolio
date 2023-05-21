@@ -18,3 +18,39 @@
         }
     }
 }
+
+/**
+* * Projects
+*/
+.projects {
+    padding: 15rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+
+    .projects__subheading {
+        margin-bottom: 10px;
+    }
+}
+
+/**
+* * About
+*/
+.about {
+    border-top: 1px solid lightgray;
+    padding: 15rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+
+    .about__inner {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    .about__subheading {
+        margin-bottom: 10px;
+    }
+
+    .about__heading {
+        margin-bottom: 40px;
+    }
+}

@@ -3,9 +3,10 @@
 */
 .header {
     position: fixed;
-    background: transparent;
+    background-color: transparent;
     width: 100%;
     z-index: 1;
+    transition: .5s;
 
     .header__nav ul {
         height: 70px;
@@ -30,8 +31,13 @@
         }
 
         a:hover {
-            background-color: #ffffff;
-            opacity: .3;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
         }
     }
+}
+
+.header.scroll-color {
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgb(197, 197, 197)
 }
