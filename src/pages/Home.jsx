@@ -1,10 +1,15 @@
 import React from 'react';
 import "./home.scss";
 import { Link, Element } from 'react-scroll';
-import SVGBackground from '../components/SVGBackground/SVGBackground';
+
 import pinpics from "../assets/images/pinpics.png";
 import weatherApp from "../assets/images/weatherapp.png";
 import homeRenovator from "../assets/images/homerenovator.png";
+import ReactJSLogo from "../assets/images/reactjs.png";
+import openWeatherLogo from "../assets/images/openweather.png";
+import FirebaseLogo from "../assets/images/firebase.png";
+import SassLogo from "../assets/images/sass.png";
+
 import CardProject from '../components/CardProject.jsx/CardProject';
 
 const projectProps = [
@@ -12,7 +17,7 @@ const projectProps = [
     image: pinpics,
     title: "PinPics",
     description: "A wallpaper website that allows users to create an account, view, like and create posts. The website also provides an interface for searching. It is built using ReactJS and Firebase for the back-end.",
-    tools: ["ReactJS", "Firebase"],
+    tools: [ReactJSLogo, FirebaseLogo],
     code: "https://github.com/memo2k/PinPics",
     liveDemo: "https://pinpics-firebase.web.app/"
   },
@@ -20,7 +25,7 @@ const projectProps = [
     image: weatherApp,
     title: "Weather App",
     description: "A Weather website that allows user to search the weather details for any city. It is built with ReactJS and OpenWeatherMap API.",
-    tools: ["ReactJS", "SCSS", "OpenWeatherMap API"],
+    tools: [ReactJSLogo, SassLogo, openWeatherLogo],
     code: "https://github.com/memo2k/react-weather-app",
     liveDemo: "https://lucky-empanada-cb76a7.netlify.app/"
   },
@@ -28,7 +33,7 @@ const projectProps = [
     image: homeRenovator,
     title: "Home Renovator",
     description: "A website for a home renovation company built with ReactJS and SCSS",
-    tools: ["ReactJS", "SCSS"],
+    tools: [ReactJSLogo, SassLogo],
     code: "https://github.com/memo2k/home-renovator",
     liveDemo: "https://home-renovator.netlify.app/"
   }
@@ -38,13 +43,17 @@ const Home = () => {
   return (
     <>
       <Element name="intro" className="hero">
-        <SVGBackground />
-
         <div className="shell">
           <div className="hero__inner">
             <div className="hero__heading">
-              <h1>Hi, I'm Mehmed,</h1>
-              <h1>a dedicated Web Developer</h1>
+              <h1><span>Hi, I'm Mehmed,</span></h1>
+              <h1>a dedicated web developer</h1>
+            </div>
+
+            <div className="hero__description">
+              <p>I am a front-end developer specializing in HTML, CSS, and React.
+                I bring a strong foundation in creating clean and accessible code,
+                building responsive designs, and crafting dynamic user interfaces.</p>
             </div>
 
             <div className="hero__actions">
