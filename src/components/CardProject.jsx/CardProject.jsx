@@ -20,9 +20,9 @@ const CardProject = ({ data, ...props }) => {
                 </div>
 
                 <div className="card__tools">
-                    {data.tools.map((item) => {
+                    {data.tools.map((item, index) => {
                         return (
-                            <p>{item}</p>
+                            <img src={item} width="60px" key={index} />
                         )
                     })}
                 </div>
