@@ -3,7 +3,6 @@
 */
 .footer {
     padding-top: 10rem;
-    background-color: #363c48;
 
     .footer__form {
         margin-bottom: 80px;
@@ -11,7 +10,7 @@
     }
 
     .footer__nav {
-        border-top: 1px solid #fff;
+        border-top: 1px solid #b3ff8b;
         padding: 40px 0;
         display: flex;
         justify-content: space-between;
@@ -29,10 +28,6 @@
             a + a {
                 margin-left: 10px;
             }
-
-            a:hover {
-                color: #CE1B5F;
-            }
         }
     }
 }
@@ -42,10 +37,6 @@
 */
 .form {
     text-align: center;
-
-    .form__subheading h2 {
-        color: #f3f3f3;
-    }
 
     .form__heading {
         margin-bottom: 40px;
@@ -93,7 +84,7 @@
     }
 
     input:focus, textarea:focus {
-        border: 1px solid #CE1B5F;
+        border: 1px solid #b3ff8b;
     }
 
     textarea {

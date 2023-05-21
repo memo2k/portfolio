@@ -3,7 +3,7 @@
 */
 .header {
     position: fixed;
-    background-color: transparent;
+    background-color: #182944;
     width: 100%;
     z-index: 1;
     transition: .5s;
@@ -32,12 +32,6 @@
 
         a:hover {
             background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
         }
     }
-}
-
-.header.scroll-color {
-    background-color: #fff;
-    box-shadow: 0 5px 5px rgb(197, 197, 197)
 }

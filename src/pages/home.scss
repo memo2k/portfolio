@@ -9,12 +9,22 @@
 
     .hero__inner {
         position: absolute;
+        max-width: 700px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         .hero__heading {
-            margin-bottom: 50px;
+            margin-bottom: 20px;
+
+            span {
+                color: #b3ff8b;
+            }
+        }
+
+        .hero__description {
+            margin-bottom: 40px;
+            color: #d0d0d0;
         }
     }
 }
@@ -23,9 +33,9 @@
 * * Projects
 */
 .projects {
-    padding: 15rem 0;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
     text-align: center;
-    background-color: #f9f9f9;
 
     .projects__subheading {
         margin-bottom: 10px;
@@ -36,10 +46,8 @@
 * * About
 */
 .about {
-    border-top: 1px solid lightgray;
-    padding: 15rem 0;
+    padding: 10rem 0;
     text-align: center;
-    background-color: #f9f9f9;
 
     .about__inner {
         max-width: 60rem;
