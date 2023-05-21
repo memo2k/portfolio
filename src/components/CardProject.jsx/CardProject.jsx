@@ -22,7 +22,7 @@ const CardProject = ({ data, ...props }) => {
                 <div className="card__tools">
                     {data.tools.map((item, index) => {
                         return (
-                            <img src={item} width="60px" key={index} />
+                            <img src={item} width="60px" alt="" key={index} />
                         )
                     })}
                 </div>
