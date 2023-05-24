@@ -3,13 +3,14 @@
 */
 .header {
     position: fixed;
-    background-color: #182944;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(197, 197, 197);
     width: 100%;
     z-index: 1;
     transition: .5s;
 
     .header__nav ul {
-        height: 60px;
+        height: 80px;
         display: flex;
         width: 70%;
         margin: 0 auto;
@@ -18,10 +19,11 @@
         li {
             max-width: 25%;
             flex: 0 0 25%;
-            height: 60px;
+            height: 80px;
         }
         
         a {
+            position: relative;
             justify-content: center;
             padding: 0 15px;
             width: 100%;
@@ -30,8 +32,25 @@
             align-items: center;
         }
 
-        a:hover {
-            background-color: rgba(0, 0, 0, 0.5);
+        a:after {
+            content: '';
+            position: absolute;
+            background-color: #55bece;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            transition: .3s;
+        }
+
+        a:hover:after {
+            width: 100%;
+        }
+    }
+
+    .header__nav ul li.active {
+        a:after {
+            width: 100%;
         }
     }
 }

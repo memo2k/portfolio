@@ -13,22 +13,22 @@
 */
 body {
     font-family: 'Exo 2', sans-serif;
-    background-color: #182944;
+    background-color: #ffffff;  
     font-weight: 400;
-    color: #fff;
+    color: #1b1b1b;
     font-size: 1rem;
     min-height: 100vh;
 
     a {
         text-decoration: none;
-        color: #fff;
+        color: #212121;
         transition: .2s;
         letter-spacing: 2px;
         cursor: pointer;
     }
 
     a:hover {
-        color: #b3ff8b;
+        color: #009180;
     }
 
     p {
@@ -50,32 +50,10 @@ body {
         font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: 3px;
-        color: #d0d0d0;
+        color: #5f5f5f;
         font-weight: 100;
         position: relative;
         display: inline-block;
-    }
-
-    h2:after {
-        position: absolute;
-        content: '';
-        display: block;
-        top: 50%;
-        right: -60px;
-        width: 40px;
-        height: 3px;
-        background-color: #b3ff8b;
-    }
-
-    h2:before {
-        position: absolute;
-        content: '';
-        display: block;
-        top: 50%;
-        left: -60px;
-        width: 40px;
-        height: 3px;
-        background-color: #b3ff8b;
     }
 
     h3 {
@@ -96,18 +74,37 @@ body {
 /**
 * * Buttons
 */
-.btn--transparent {
-    padding: 15px 25px;
-    border-radius: 30px;
-    background-color: transparent;
-    border: 2px solid #b3ff8b;
-    color: #b3ff8b;
-    font-weight: bold;
+.btn {
+    cursor: pointer;
+    transition: .2s;
+    padding: 12px 25px;
 }
 
-.btn--transparent:hover {
-    background-color: #b3ff8b;
-    color: #000;
+.btn--green {
+    background-color: transparent;
+    border: 2px solid #009180;
+    color: #009180;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.btn--green:hover {
+    background-color: #009180;
+    color: #fff;
+}
+
+.btn--white {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.btn--white:hover {
+    opacity: .7;
 }
 
 /**

@@ -2,7 +2,9 @@
 * * Footer
 */
 .footer {
-    padding-top: 10rem;
+    padding-top: 12rem;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    background: linear-gradient(45deg, #009180, #26ac7b);
 
     .footer__form {
         margin-bottom: 80px;
@@ -10,18 +12,18 @@
     }
 
     .footer__nav {
-        border-top: 1px solid #b3ff8b;
+        border-top: 1px solid #ededed;
         padding: 40px 0;
         display: flex;
         justify-content: space-between;
 
         .footer__copyright {
-            color: #fff;
+            color: #ededed;
         }
 
         .footer__socials {
             a {
-                color: #fff;
+                color: #ededed;
                 transition: .2s;
             }
 
@@ -38,8 +40,28 @@
 .form {
     text-align: center;
 
-    .form__heading {
+    .form__subheading {
         margin-bottom: 40px;
+
+        h2 {
+            color: #ededed;
+        }
+
+        h2:after {
+            position: absolute;
+            content: '';
+            display: block;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 3px;
+            background-color: #ededed;
+        }
+    }
+
+    .form__heading {
+        margin-bottom: 80px;
         color: #fff;
     }
 
@@ -72,19 +94,15 @@
         padding: 10px;
         outline: none;
         font-size: 18px;
-        border: 1px solid #586275;
-        background-color: #586275;
-        color: #fff;
+        border: 1px solid #626262;
+        background-color: #efefef;
+        color: #000000;
         transition: .2s;
         letter-spacing: 1px;
     }
 
-    input::placeholder, textarea::placeholder {
-        color: #fff;
-    }
-
     input:focus, textarea:focus {
-        border: 1px solid #b3ff8b;
+        border: 1px solid #efefef;
     }
 
     textarea {
