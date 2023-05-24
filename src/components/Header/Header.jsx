@@ -1,35 +1,37 @@
 import React from 'react';
 import "./header.scss";
 import { Link } from 'react-scroll';
+import { motion } from "framer-motion";
 
 const Header = () => {
 
     return (
-        <header className="header">
+        <motion.header initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }} className="header">
             <div className="shell">
                 <div className="header__inner">
                     <nav className="header__nav">
                         <ul>
                             <li>
-                                <Link to="intro" smooth={true} duration={500}>Intro</Link>
+                                <Link to="intro" spy={true} smooth={true} offset={-50} duration={700}>Intro</Link>
                             </li>
 
                             <li>
-                                <Link to="projects" smooth={true} duration={500}>Projects</Link>
+                                <Link to="about" spy={true} smooth={true} offset={-50} duration={700}>About Me</Link>
+                            </li>
+                            
+                            <li>
+                                <Link to="projects" spy={true} smooth={true} offset={-50} duration={700}>Projects</Link>
                             </li>
 
-                            <li>
-                                <Link to="about" smooth={true} duration={500}>About Me</Link>
-                            </li>
 
                             <li>
-                                <Link to="contact" smooth={true} duration={500}>Contact</Link>
+                                <Link to="contact" spy={true} smooth={true} offset={-50} duration={700}>Contact</Link>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-        </header>
+        </motion.header>
     )
 }
 
