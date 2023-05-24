@@ -1,8 +1,9 @@
-import React from "react";
+import React, { lazy } from "react";
 import "./assets/styles/style.scss";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home";
+
+const Home = lazy(() => import("./pages/Home"));
+const Header = lazy(() => import("./components/Header/Header"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
 
 function App() {
   return (
